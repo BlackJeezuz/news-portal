@@ -1,0 +1,47 @@
+.article {
+  &__accordion {
+    position: relative;
+    width: 100%;
+    padding: 10px 40px;
+
+    &.is-opened {
+      .article__icon {
+        transform: translateY(-50%) rotate(180deg);
+      }
+
+      & ~ .article__body {
+        max-height: 500px;
+      }
+    }
+  }
+
+  &__time {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__icon {
+    @extend %centY;
+    right: 8px;
+    transition: transform .3s;
+  }
+
+  &__body {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s;
+  }
+
+  &__text {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 30px;
+  }
+}
