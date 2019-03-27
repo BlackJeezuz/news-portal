@@ -19,9 +19,9 @@ class NewsList extends Component {
 
     return (
       <ul className="news-list">
-        {articles.map(article => (
+        {articles.map((article, index) => (
           <li key={article._id} className="news-list__item">
-            <Article article={article} />
+            <Article article={article} index={index} />
           </li>
         ))}
       </ul>
