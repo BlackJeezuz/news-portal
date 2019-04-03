@@ -3,6 +3,8 @@
     margin-bottom: 30px;
   }
   &__accordion {
+    display: flex;
+    align-items: center;
     position: relative;
     width: 100%;
     padding: 10px 40px;

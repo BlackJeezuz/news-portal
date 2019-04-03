@@ -19,7 +19,8 @@
     "semi": 0,
     "import/no-unresolved": 0,
     "comma-dangle": 0,
-    "react/destructuring-assignment": 0
+    "react/destructuring-assignment": 0,
+    "linebreak-style": 0
   },
   "globals": {
     "window": true,

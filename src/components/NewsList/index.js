@@ -4,14 +4,13 @@ import Article from '@/components/Article'
 
 class NewsList extends Component {
   state = {
-    articles: [],
-    isLoaded: false
+    articles: []
   }
 
   async componentDidMount() {
     const articles = await api.get('/article').then(res => res.data.items)
 
-    this.setState({ articles, isLoaded: true })
+    this.setState({ articles })
   }
 
   render() {
